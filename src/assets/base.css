@@ -54,9 +54,18 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
   font-weight: normal;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Petrov Sans-Trial", sans-serif;
 }
+
+/** {*/
+/*  margin: 0 auto;*/
+/*  padding: 0;*/
+/*  font-family: "Petrov Sans-Trial", sans-serif;*/
+/*  box-sizing: border-box;*/
+/*}*/
 
 body {
   min-height: 100vh;
