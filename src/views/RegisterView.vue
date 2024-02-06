@@ -7,7 +7,12 @@
     <div class="form-box">
       <div class="form-value">
         <form action="">
-          <h2>Авторизация</h2>
+          <h2>Регистрация</h2>
+          <div class="inputbox">
+            <ion-icon name="id-card-outline"></ion-icon>
+            <input type="text" required>
+            <label for="">ФИО</label>
+          </div>
           <div class="inputbox">
             <ion-icon name="mail-outline"></ion-icon>
             <input type="text" required>
@@ -20,7 +25,7 @@
           </div>
           <button>Войти</button>
           <div class="register">
-            <p>Нет аккаунта? <router-link to="/register">Регистрация</router-link></p>
+            <p>Уже есть аккаунт? <router-link to="/login">Авторизация</router-link></p>
           </div>
         </form>
       </div>
@@ -31,6 +36,26 @@
 </template>
 
 <style scoped>
+li, a {
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.nav-links li a {
+  transition: all .3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: #dcd8d8;
+}
+
 section {
   display: flex;
   justify-content: center;
@@ -102,14 +127,6 @@ input:valid ~ label {
   top: 20px;
 }
 
-.forget {
-  margin: -15px 0 15px;
-  font-size: .9em;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-}
-
 .forget label input {
   margin-right: 3px;
 
@@ -156,13 +173,5 @@ button:hover {
 
 .register p a:hover {
   text-decoration: underline;
-}
-
-.footer-value {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 5px 30px;
-  background: transparent;
 }
 </style>

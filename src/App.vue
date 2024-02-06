@@ -6,8 +6,9 @@ import LoginView from "@/views/LoginView.vue";
 
 <template>
   <HeaderItem/>
-  <LoginView/>
-  <RouterView />
+  <main>
+    <RouterView />
+  </main>
 </template>
 
 <style scoped>

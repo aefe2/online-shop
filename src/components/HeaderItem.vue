@@ -10,7 +10,7 @@
         <li class="catalog-link"><a href="">Каталог</a></li>
         <li class="cart-link"><a href="">Корзина</a></li>
         <li class="orders-link"><a href="">Заказы</a></li>
-        <li class="register-link"><a href="">Регистрация</a></li>
+        <li class="register-link"><router-link to="/login">Авторизация</router-link></li>
       </ul>
     </nav>
   </header>
@@ -22,6 +22,7 @@
   font-size: 21px;
 }
 header {
+  //background: #222222;
   position: fixed;
   width: 100%;
 }
